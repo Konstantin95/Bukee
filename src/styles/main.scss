@@ -4,6 +4,9 @@
 @import "vendor/normalize";
 @import "components/sprite";
 
+$light-color: #fff;
+$accent-color: #56e496;
+
 h1, h2, h3, h4, p {
     padding: 0;
     margin: 0;
@@ -24,12 +27,21 @@ body {
     background-image: url(../img/bg-main.png);
      background-repeat: no-repeat;
      background-size: cover;
+     color:$light-color;
+}
+
+.wrap {
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 43px;
     &__logo {
         display: block;
         width: 137px;
@@ -41,8 +53,23 @@ body {
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
+        font-family: 'Open Sans', serif;
         &__item {
-            margin-left: 15px;
+            margin-left: 22px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: 3s;
+            &:hover {
+                border-bottom: 3px solid $accent-color;
+            }
+        }
+        &__item.active {
+            border-bottom: 3px solid $accent-color;
+        }
+        &__link {
+            color: $light-color;
+            text-decoration: none;
+            letter-spacing: 0.5px;
         }
     }
 }
