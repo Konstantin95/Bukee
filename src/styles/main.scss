@@ -105,10 +105,11 @@ body {
     }
     &__description {
         font-family: 'Open Sans', serif;
+        width: 580px;
         font-size: 15px;
         line-height: 24px;
-        margin-bottom: 26px;
-        letter-spacing: 2px;
+        margin-bottom: 23px;
+        letter-spacing: 0.78px;
         
     }
     &__btn {
