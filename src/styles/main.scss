@@ -85,6 +85,10 @@ body {
         margin-bottom: 31px;
         padding-left: 2px;
     }
+
+    &__name-top {
+        margin-top: 5px;
+    }
     &__title {
         font-size: 48px;
         font-weight: 700;
@@ -165,47 +169,49 @@ body {
     }
 }
 
-.block-author {
+.page {
+    padding-top: 161px;
+}
+
+
+.block-author{
     display: flex;
-    .block-text {
-    &__author {
+    justify-content: space-between;
+}
+.block-ava {
+    position: relative;
+    &__svg {
+        position: absolute;
+        right: -3px;
+        top: -3px;
+        z-index: -1;
+    }
+    &__img {
+        margin-top: 46px;
+        margin-right: 41px
+    }
+}
+
+.block-counter {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    color: $accent-color;
+    margin-top: 178px;
+    margin-left: 145px;
+    &__total {
         font-size: 18px;
-        margin-top: 175px;
-        margin-left: 4px;
-        letter-spacing: 0.5px;
     }
-    &__title {
-        margin-top: 19px;
-        span {
-            margin-top: 12px;
-            margin-left: 4px;
-        }
-    }
-    &__description {
-        width: 590px;
-        height: 93px;
-        margin-left: 4px;
-        letter-spacing: 0.7px;
-     }
-     &__btn {
+    span {
         display: block;
-        background-color: #56e496;
-        color: #fff;
-        text-decoration: none;
-        max-width: 238px;
-        border-radius: 3px;
-        text-align: center;
-        font-size: 18px;
-        margin-top: 26px;
-        margin-left: 2px;
-        padding: 14px 0;
-        letter-spacing: 0.7px;
-        margin-bottom: 20px
-     }
-     .block-photo__img {
-        margin-left: 691px;
-        margin-top: -441px;
-     }
-   }
-    
+        font-size: 80px;
+        margin-bottom: 12px;
+    }
+    &__hapy {
+        margin-left: 53px;
+    }
+    &__happy {
+        margin-right: 72px;
+    }
 }
