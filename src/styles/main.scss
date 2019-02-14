@@ -634,3 +634,43 @@ body {
         }
 }
 }
+
+.footer {
+    background-color: $bg-dark-color;
+    color: $gray-color;
+    padding: 172px 0;
+}
+
+.block-footer {
+    display: flex;
+    justify-content: space-between;
+    &>div {
+        flex-basis: 30%;
+    }
+    &__logo {
+        display: block;
+        width: 137px;
+        height: 38px;
+        background-image: url(../img/Logo.svg);
+        background-repeat: no-repeat;
+}
+    &__title {
+        font-size: 18px;
+        color: $accent-color;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    &__social {
+        display: flex;
+        list-style-type: none;
+        &>li {
+            margin-right: 10px;
+            &>a {
+                color: $accent-color;
+            }
+            
+        }
+    }
+}
