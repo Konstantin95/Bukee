@@ -115,52 +115,72 @@
                                     <li class="more-list__item">Consectetur adipisicing elit</li>
                                     <li class="more-list__item">Labore et dolore magna</li>
                                 </ol>
-                            <button class="block-more_btn">More</button>
+                                <ol class="block-more__list block-more__list_next" id="nextContentsList" style="display:none;">
+                                    <li class="more-list__item">Lorem ipsum dolor sit amet</li>
+                                    <li class="more-list__item">Consectetur adipisicing elit</li>
+                                    <li class="more-list__item">Labore et dolore magna</li>
+                                    <li class="more-list__item">Consectetur adipisicing elit</li>
+                                    <li class="more-list__item">Labore et dolore magna</li>
+                                    <li class="more-list__item">Lorem ipsum dolor sit amet</li>
+                                    <li class="more-list__item">Consectetur adipisicing elit</li>
+                                    <li class="more-list__item">Labore et dolore magna</li>
+                                    <li class="more-list__item">Consectetur adipisicing elit</li>
+                                    <li class="more-list__item">Labore et dolore magna</li>
+                                </ol>
+                            <button id="nextContents" class="block-more_btn">More</button>
                         </div>
                             </div>
                 </div>
             </div>
             <div class="page">
                 <div class="wrap">
-                    <div class="block-other">
-                        <h2 class="page__title">Other Books </h2>
-                        <p class="page__subtitle">Some books you might be interested in</p>
-                            <div class="block-other-img">
-                            <div class="block-other-img__weq">
-                                <h2 class="block-other-img__title">Inception</h2>
-                                <p class="block-other-img__text">Books are the best friends</p>
-                                <p class="block-other-img__author">- By Emma Anderson</p>
-                                </div>
-                                <div class="block-other-img__fight">
-                                    <h2 class="block-other-img__title titleft">Fight-Club</h2>
-                                    <p class="block-other-img__text">Books are the best friends</p>
-                                    <p class="block-other-img__author">- By Emma Anderson</p>
-                                </div>
-                                    <div class="block-other-img__qwe">
-                                        <h2 class="block-other-img__title">Daredevils</h2>
-                                        <p class="block-other-img__text">Books are the best friends</p>
-                                        <p class="block-other-img__author">- By Emma Anderson</p>
-                                    </div>
+                    <h2 class="page__title">Other Books</h2>
+                    <p class="page__subtitle">Some books you might be interested in</p>
+                    <div class="block-product">
+                        <div class="block-product-item">
+                            <div class="block-product-demo">
+                                <h2 class="block-product-demo__title">
+                                    Inception
+                                    <span>Books are the best friends</span>
+                                </h2>
+                                <p class="block-product-demo__author">- By Emma Anderson</p>
                             </div>
-                                <div class="block-other-description">
-                                    <div class="block-other-inception">
-                                        <h1 class="block-other-inception__title">Inception</h1>
-                                        <p class="block-other-inception__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                                        <a class="block-other-inception__more" href="#">Read more</a>
-                                    </div> 
-                                        <div class="block-other-club">
-                                            <h1 class="block-other-club__title">Fight-club</h1>
-                                            <p class="block-other-club__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                            <a class="block-other-club__more" href="#">Read more</a>
-                                        </div> 
-                                            <div class="block-other-daredevils">
-                                                <h1 class="block-other-daredevils__title">Daredevils</h1>
-                                                <p class="block-other-daredevils__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                                <a class="block-other-daredevils__more" href="#">Read more</a>
-                                            </div>            
-                                </div>
-                                <a href="#" class="page__btn page__btn-other">Browse all books</a>   
+                            <div class="block-product-text">
+                                <h3>Inception</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="block-product-item">
+                            <div class="block-product-demo">
+                                <h2 class="block-product-demo__title">
+                                        Fight Club
+                                    <span>Books are the best friends</span>
+                                </h2>
+                                <p class="block-product-demo__author">- By Emma Anderson</p>
+                            </div>
+                            <div class="block-product-text">
+                                <h3>Fight Club</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="block-product-item">
+                            <div class="block-product-demo">
+                                <h2 class="block-product-demo__title">
+                                        Daredevils
+                                    <span>Books are the best friends</span>
+                                </h2>
+                                <p class="block-product-demo__author">- By Emma Anderson</p>
+                            </div>
+                            <div class="block-product-text">
+                                <h3>Daredevils</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
                     </div>
+                    <a href="" class="page__btn">Browse all books</a>
                 </div>
             </div>
                 <div class="page page-carousel">
@@ -329,7 +349,11 @@
                             dots: true,
                             arrows: false,
                         });
-                        });                    
+                        }); 
+                        $("#nextContents").click(function(){
+                        $("#nextContentsList").fadeIn();
+                        $("#nextContents").hide();
+                        });                   
                     </script>
     </body>
 </html>
