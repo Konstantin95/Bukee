@@ -18,6 +18,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:100,400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     </head>
     <body>
             <div class="page-main">
@@ -162,16 +163,46 @@
                     </div>
                 </div>
             </div>
-                <div class="page">
+                <div class="page page-carousel">
                     <div class="wrap">
-                        <div class="block__Kate">
-                            <img src="img/foto.png" alt="photo">
-                            <h1 class="Kate__name">Kate Dennings <span>Calligraphy Expert</span></h1>
-                        </div>
-                            <div class="block__content">
+                        <div class="block-carousel">
+                            <div>
+                                <div class="block-carousel-ava">
+                                    <div class="block-carousel-thumb">
+                                            <img src="../img/foto.png" alt="">
+                                    </div>
+                                    <span class="block-carousel-bq"></span>
+                                </div>
+                                <h3 class="Kate__name">Kate Dennings</h3>
+                                <p class="block-carousel-expert">Calligraphy Expert</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                             </div>
+                            <div>
+                                <div class="block-carousel-ava">
+                                    <div class="block-carousel-thumb">
+                                        <img src="../img/foto.png" alt="">
+                                    </div>
+                                    <span class="block-carousel-bq"></span>
+                                </div>
+                                <h3 class="Kate__name">Kate Dennings</h3>
+                                <p class="block-carousel-expert">Calligraphy Expert</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                                <div>
+                                    <div class="block-carousel-ava">
+                                        <div class="block-carousel-thumb">
+                                            <img src="../img/foto.png" alt="">
+                                        </div>
+                                        <span class="block-carousel-bq"></span>
+                                    </div>
+                                    <h3 class="Kate__name">Kate Dennings</h3>
+                                    <p class="block-carousel-expert">Calligraphy Expert</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                </div>
+                        </div>  
                     </div>
+                    <svg class="page__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 849"><path d="M-1 0l802 61 799-61v789l-799 60-802-60V0z" fill="#44444f" fill-rule="evenodd"/></svg>
+                </svg>
                 </div>
             <div class="page">
                 <div class="wrap">
@@ -256,12 +287,12 @@
                     <div class="footer">
                         <div class="wrap">
                             <div class="block-footer">
-                                <div>
+                                <div class="block-footer-bukee">
                                     <a href="#" class="block-footer__logo"></a>
-                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <p>© 2018 Bukee Private Limited.</p>
+                                    <p class="block-footer-bukee__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p class="block-footer-bukee__copyr">© 2018 Bukee Private Limited.</p>
                                 </div>
-                                    <div>
+                                    <div class="block-footer-useful">
                                         <h2 class="block-footer__title">Useful Links</h2>
                                     <ul class="block-footer__list">
                                         <li>About Bukee</li>
@@ -270,7 +301,7 @@
                                         <li>Privacy Policy</li>
                                     </ul>
                                 </div>
-                                    <div>
+                                    <div class="block-footer-contacts">
                                         <h2 class="block-footer__title">Our contacts</h2>
                                         <ul class="block-footer__list">
                                             <li>Amphitheatre Parkway, CA, 94043</li>
@@ -289,8 +320,17 @@
                         </div>
                     </div>
                 </div>
-                    <script src="/js/main.js"></script>     
-            
+                    <script src="/js/main.js"></script>   
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                    <script>
+                        $(document).ready(function(){
+                        $('.block-carousel').slick({
+                            dots: true,
+                            arrows: false,
+                        });
+                        });                    
+                    </script>
     </body>
 </html>
 
